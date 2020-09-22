@@ -36,14 +36,16 @@ function multiply(a,b){
     return a*b
 }
 
-
+const multiply = (a,b) => (a * b); //arrow function
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+function ageInDogYears(age){
+    return age*7;
+}
 
-
-
+const ageInDogYears = (age) => (age*7); //arrow function
 
 
 /************************************************************** Task 3 **************************************************************/
