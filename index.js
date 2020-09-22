@@ -98,8 +98,32 @@ function dogFeeder(weight, age){
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
-
-  
+function rockPaperSissors(yourChoice){
+    let computersChoice = Math.floor(Math.random()*10); //0 to 2 rock, 3 to 6 paper, 7 to 9 sissors
+    if(computersChoice < 3){
+        computersChoice = "rock";
+    } else if(computersChoice < 7){
+        computersChoice = "paper";
+    }else{
+        computersChoice = "sissors";
+    }
+    
+    if(yourChoice === computersChoice){
+        return "tie, computer also selected " + computersChoice;
+    }else if(yourChoice === "rock" && computersChoice === "paper"){
+        return "computer selected paper, you lost";
+    }else if (yourChoice === "rock" && computersChoice === "sissors"){
+        return "computer selected sissors, you won";
+    }else if (yourChoice === "paper" && computersChoice === "rock"){
+        return "computer selected rock, you won";
+    }else if (yourChoice === "paper" && computersChoice === "sissors"){
+        return "computer selected sissors, you lost";
+    }else if (yourChoice === "sissors" && computersChoice === "rock"){
+        return "computer selected rock, you lost";
+    }else{ //(yourChoice === "sissors" && computersChoice === "paper")
+        return "computer selected paper, you won";
+    }
+}
   
 
 /************************************************************** Task 5 **************************************************************/
