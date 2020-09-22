@@ -129,13 +129,17 @@ function rockPaperSissors(yourChoice){
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
+function kmToMiles(km){
+    return km*0.621371;
+}
 
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+function feetToCM(feet){
+    return feet*30.48;
+}
 
 
 
