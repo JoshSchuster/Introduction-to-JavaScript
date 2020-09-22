@@ -65,7 +65,29 @@ const ageInDogYears = (age) => (age*7); //arrow function
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
+function dogFeeder(weight, age){
+    if(age > 1){
+        if(weight <= 5){
+            return (weight*.05);
+        }else if(weight <= 10){
+            return (weight*.04);
+        }else if(weight <= 15){
+            return (weight*.03);
+        }else{
+            return (weight*.02);
+        }
+    }else{
+        if(age >= (1/6) && age < (1/3)){
+            return (weight*.1);
+        }else if(age >= (1/3) && age < (7/12)){
+            return (weight*.05);
+        }else if(age >= (7/12) && age <= 1){
+            return (weight*.04);
+        }else{
+            return 0;//puppy under 2 months should not eat dog food
+        }
+    }
+}
 
 
 
