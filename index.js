@@ -148,7 +148,11 @@ function feetToCM(feet){
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
+function annoyingSong(startingNum){
+    for(let i = startingNum; i > 0; i--){
+        console.log(i +" bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + (i-1) + " bottles of soda on the wall");
+    }
+}
 
 
 
