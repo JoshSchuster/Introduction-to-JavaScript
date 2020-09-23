@@ -196,7 +196,11 @@ function gradeCalculator(score){
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
+let yourChoice = prompt("Please enter your rock, paper, or sissors selection: ");
 
+if (yourChoice != null) {
+    console.log(rockPaperSissors(yourChoice));
+}
 
 
 
